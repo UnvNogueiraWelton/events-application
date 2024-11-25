@@ -11,7 +11,7 @@ FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
-COPY --from=builder /app/target/user-application-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/events-application-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
